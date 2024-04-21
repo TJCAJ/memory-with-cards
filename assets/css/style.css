@@ -24,10 +24,10 @@
 #overlay {
     display: none;
     position: absolute;
-    top: 25%;
-    left: 25%;
-    right: 25%;
-    bottom: 25%;
+    top: 20%;
+    left: 20%;
+    right: 20%;
+    bottom: 20%;
     background-color: rgba(209, 160, 238, 0.75);
 }
 
@@ -198,13 +198,13 @@ by Youtube channel Code Grind ('https: //www.youtube.com/watch?v=B6aJpbX_IZU')--
     border-radius: 6px;
 }
 
-#reset-button {
+.reset-button {
     font-size: large;
     padding: 10px;
     border-radius: 6px;
 }
 
-#reset-button:hover {
+.reset-button:hover {
     transform: scale(1.03);
 }
 
