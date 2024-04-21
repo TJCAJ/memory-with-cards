@@ -1,7 +1,7 @@
 // A test of the modal function with rules
 //Adding const and evenelisteners to the modal
 
-//Modal const
+//Modal const and function
 
 const modal = document.querySelector("#modal")
 const openModalButton = document.querySelector("#open-modal-btn")
@@ -21,3 +21,5 @@ function closeModal() {
     modal.classList.remove("open")
     overlay.classList.remove("open")
 }
+
+// Add const and functons for game
