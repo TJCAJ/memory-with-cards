@@ -4,6 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- googge fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
     <!--Title-->
     <title>Memory with playing cards</title>
     <!--Favicon-->
@@ -17,12 +25,81 @@
 </head>
 
 <body>
-    <div>
-        <h1>MEMORY WITH A DECK OF CARDS</h1>
+
+    <!-- Header -->
+
+    <header class="header">
+        <h1 class="logo">MEMORY WITH A DECK OF CARDS</h1>
+    </header>
+
+    <div shuffle_cards id="mixcards">
+        <button id="reset-button">RESET</button>
+        <h2 id="scores">Score<span>:</span></h2>
     </div>
 
+    <section class="gameboard">
 
+        <!-- Playing Card Images are downloaded from... -->
 
+        <div class="cardsontable" id="cardcontainer">
+            <div class="card" id="playcard" playingcard="ace-black">
+                <img src="./assets/images/A-C.png" alt="Image 1">
+            </div>
+            <div class="card" id="playcard" playingcard="ace-red">
+                <img src="./assets/images/A-D.png" alt="Image 2">
+            </div>
+            <div class="card" id="playcard" playingcard="ace-red">
+                <img src="./assets/images/A-H.png" alt="Image 3">
+            </div>
+            <div class="card" id="playcard" playingcard="ace-black">
+                <img src="./assets/images/A-S.png" alt="Image 4">
+            </div>
+            <div class="card" id="playcard" playingcard="jack-black">
+                <img src="./assets/images/J-C.png" alt="Image 5">
+            </div>
+            <div class="card" id="playcard" playingcard="jack-red">
+                <img src="./assets/images/J-D.png" alt="Image 6">
+            </div>
+            <div class="card" id="playcard" playingcard="jack-red">
+                <img src="./assets/images/J-H.png" alt="Image 7">
+            </div>
+            <div class="card" id="playcard" playingcard="jack-black">
+                <img src="./assets/images/J-S.png" alt="Image 8">
+            </div>
+            <div class="card" id="playcard" playingcard="king-black">
+                <img src="./assets/images/K-C.png" alt="Image 9">
+            </div>
+            <div class="card" id="playcard" playingcard="king-red">
+                <img src="./assets/images/K-D.png" alt="Image 10">
+            </div>
+            <div class="card" id="playcard" playingcard="king-red">
+                <img src="./assets/images/K-H.png" alt="Image 11">
+            </div>
+            <div class="card" id="playcard" playingcard="king-black">
+                <img src="./assets/images/K-S.png" alt="Image 12">
+            </div>
+            <div class="card" id="playcard" playingcard="queen-black">
+                <img src="./assets/images/Q-C.png" alt="Image 13">
+            </div>
+            <div class="card" id="playcard" playingcard="queen-red">
+                <img src="./assets/images/Q-D.png" alt="Image 14">
+            </div>
+            <div class="card" id="playcard" playingcard="queen-red">
+                <img src="./assets/images/Q-H.png" alt="Image 15">
+            </div>
+            <div class="card" id="playcard" playingcard="queen-black">
+                <img src="./assets/images/Q-S.png" alt="Image 16">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+        <div id="game-info">
+            <h4>PAIR VALUES & COLOURS TO ADD SCORE</h4>
+        </div>
+    </footer>
 
     <script src="assets/js/script.js" defer></script>
 </body>
