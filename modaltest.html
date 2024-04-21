@@ -12,22 +12,33 @@
         #modal.open {
             display: block;
         }
+
+        #overlay.open {
+            display: block;
+        }
     </style>
 
 </head>
 
 <body>
 
-    <button id="open-modal-btn">RULES</button>
+    <section class="gameboard">
+        <div class="cardsontable" id="cardcontainer">
+            <button id="open-modal-btn">INFO</button>
 
-    <div id="modal">
-        <h2>How to play this memory game</h2>
-    </div>
-    <div>
-        <p>Pair cards with the same value and colours red or black to score.</p>
-        <button id="close-modal-btn">Close Modal</button>
-    </div>
+            <div id="modal">
+                <h2>How to play this memory game</h2>
+                <h4>Pair cards with the same value and colours red or black to score.</h4>
+            </div>
 
+            <div id="overlay"></div>
+
+            <div>
+                <button id="close-modal-btn">CLOSE INFO</button>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/script.js" defer></script>
 </body>
 
 </html>
